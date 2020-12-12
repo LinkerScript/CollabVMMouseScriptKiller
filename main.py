@@ -6,6 +6,7 @@ from webbot import Browser
 web = Browser()
 
 # After that, go to collabvm. [ link: http://computernewb.com/collab-vm/ ]
+print("Went to CollabVM")
 web.go_to("http://computernewb.com/collab-vm/")
 
 # Click 'continue' on the nsfw page.
@@ -19,5 +20,6 @@ time.sleep(3)
 
 # Click on "Take Turn" and wait 10 seconds then click on it again.
 while True:
+  print("Clicked 'Take Turn. Waiting 8s.....")
   web.click("Take Turn")
   time.sleep(8)
