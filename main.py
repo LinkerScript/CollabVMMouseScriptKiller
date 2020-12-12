@@ -8,7 +8,8 @@ web = Browser()
 # After that, go to collabvm. [ link: http://computernewb.com/collab-vm/ ]
 web.go_to("http://computernewb.com/collab-vm/")
 
-
+# Click 'continue' on the nsfw page.
+web.click("Continue")
 
 # Click on a VM
 web.click("Windows 10 Enterprise 1909 x64 (VM 5)")
@@ -19,4 +20,4 @@ time.sleep(3)
 # Click on "Take Turn" and wait 10 seconds then click on it again.
 while True:
   web.click("Take Turn")
-  time.sleep(10)
+  time.sleep(8)
